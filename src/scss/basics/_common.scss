@@ -1,0 +1,208 @@
+// clearfix
+.clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// float
+.f-left {
+  float: left;
+
+  @include mq('sp') {
+    float: initial;
+  }
+}
+
+.f-right {
+  float: right;
+
+  @include mq('sp') {
+    float: initial;
+  }
+}
+
+// inner
+.inner-960 {
+  width: 960px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.inner-1000 {
+  width: 1000px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq('tab') {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}
+
+.inner-1180 {
+  width: 1180px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-1280 {
+  width: 1280px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// text-align
+.center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+
+// margin
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt55 {
+  margin-top: 55px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt70 {
+  margin-top: 70px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt90 {
+  margin-top: 90px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt120 {
+  margin-top: 120px;
+}
+
+.mt150 {
+  margin-top: 150px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+// padding
+.pt20 {
+  padding-top: 20px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.pt60 {
+  padding-top: 60px;
+}
+
+.pt70 {
+  padding-top: 70px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.pb90 {
+  padding-bottom: 90px;
+}
+
+// font-weight
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+// display
+.dis-none {
+  display: none;
+}
+
+// flex-direction:reverse;
+.df-reverse {
+  flex-direction: row-reverse;
+}
+
+.pc-none {
+  display: none;
+}
+
+.sp-none {
+  @include mq('sp') {
+    display: none;
+  }
+}
+
+.sp-inline {
+  @include mq('sp') {
+    display: inline;
+  }
+}

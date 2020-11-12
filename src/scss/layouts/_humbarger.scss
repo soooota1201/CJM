@@ -1,0 +1,142 @@
+.humbarger {
+  display: none;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 120px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #B7880D;
+
+  @include mq('tab') {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+
+  span {
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    margin-bottom: 10px;
+    transition: .5s;
+
+    @include mq('tab') {
+      display: block;
+      width: 30px;
+      height: 2px;
+    }
+
+    &:nth-child(1) {
+      top: 48px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include mq('tab') {
+        top: 14px;
+      }
+    }
+
+    &:nth-child(2) {
+      top: 62px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include mq('tab') {
+        top: 24px;
+      }
+    }
+
+    &:nth-child(3) {
+      top: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include mq('tab') {
+        top: 35px;
+      }
+    }
+  }
+
+  span.active {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      top: 66px;
+      left: 30%;
+
+      @include mq('tab') {
+        top: 26px;
+        left: 21%;
+      }
+    }
+
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+      left: 30%;
+      top: 66px;
+
+      @include mq('tab') {
+        top: 26px;
+        left: 21%;
+      }
+    }
+
+    &:nth-child(3) {
+      top: 66px;
+      transform: rotate(-45deg);
+      left: 30%;
+
+      @include mq('tab') {
+        top: 26px;
+        left: 21%;
+      }
+    }
+  }
+}
+
+#dropdown-nav {
+  position: absolute;
+  top: 80px;
+  /*ナビメニューを左に隠した状態になる*/
+  right: -50%;
+  width: 50%;
+  height: 100vh;
+  background: #ffffff;
+  /*０.7秒かけてナビメニューがスライドする*/
+  transition: .5s;
+  background-color: #000000;
+  z-index: 200;
+}
+
+#dropdown-nav ul {
+  padding-top: 20px;
+}
+
+#dropdown-nav ul li {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+#dropdown-nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .5s;
+}
+
+#dropdown-nav li a:hover {
+  color: #ffffff;
+  border-bottom: none;
+}
+
+.in {
+  transform: translateX(-100%);
+}

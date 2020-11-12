@@ -1,0 +1,119 @@
+
+@include mq('sp') {
+
+  .infiniteslide {
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+
+  .infinite {
+    &-item {
+      display: inline-block;
+      margin-right: 10px;
+      img {
+        width: 150px;
+        display: block;
+      }
+    }
+  }
+  
+
+  /* ======================
+            店舗情報
+    ====================== */
+
+  
+  .shop {
+    &-index {
+      padding: 25px 35px 40px;
+      box-sizing: border-box;
+    }
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+
+      &__img {
+        width: 40%;
+
+        &>img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        width: 60%;
+      }
+
+      &__heading {
+        font-size: 18px;
+        padding-left: 10px;
+        font-weight: 200;
+      }
+
+      &__address {
+        font-size: 12px;
+        padding-left: 10px;
+        font-weight: 200;
+        margin-top: 7px;
+      }
+    }
+
+  }
+  
+    .l-shop-item {
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+  }
+
+  .delivery {
+    display: flex;
+    margin-top: 10px;
+
+    &__ly {
+      margin-right: 10px;
+    }
+  }
+
+  .delivery-pl {
+    padding-left: 15px;
+  }
+
+  /* ======================
+            新着情報
+    ====================== */
+  .news {
+
+    .news-index {
+      padding: 35px 50px;
+      box-sizing: border-box;
+    }
+
+    &-item {
+      &__time {
+        font-size: 12px;
+        color: #B7880D;
+      }
+
+      &__ttl {
+        font-size: 19px;
+        color: #B7880D;
+        margin-top: 8px;
+      }
+
+      &__text {
+        font-size: 15px;
+        margin-top: 8px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .l-news-item {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+}

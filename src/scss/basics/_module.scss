@@ -1,0 +1,71 @@
+
+.goldline {
+  img {
+    display: block;
+  }
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main-btns {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 300;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+
+    .main-btns-item {
+      color: #ffffff;
+      padding: 0 15px;
+
+      img {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+    }
+  }
+}
+
+.fc-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+  animation: wobble 1.8s ease-in-out infinite;
+  z-index: 300;
+}
+
+@keyframes wobble {
+  10% {
+    transform: translateX(10px);
+  }
+
+  15% {
+    transform: translateX(-3px);
+  }
+
+  20% {
+    transform: translateX(0%);
+  }
+
+  75% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

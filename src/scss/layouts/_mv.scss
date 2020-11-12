@@ -1,0 +1,21 @@
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  img {
+    display: block;
+  }
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important;
+
+  &:after {
+    font-size: 15px !important;
+  }
+}
+

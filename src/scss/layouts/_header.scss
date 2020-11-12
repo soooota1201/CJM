@@ -1,0 +1,24 @@
+@include mq('sp') {
+
+  .l-header {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    background-color: #000000;
+    position: relative;
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &-logo {
+      img {
+        width: 200px;
+      }
+    }
+
+  }
+
+}

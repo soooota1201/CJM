@@ -1,0 +1,46 @@
+body {
+  font-family: 'Avenir',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    'YuGothic',
+    'Yu Gothic',
+    'メイリオ',
+    'meiryo',
+    'ＭＳ Ｐゴシック',
+    'MS PGothic',
+    sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.inner-1180 {
+  width: 1180px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-1280 {
+  width: 1280px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
