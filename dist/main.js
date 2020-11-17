@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var swiper = new Swiper('.swiper-container', {\n  // Optional parameters\n  loop: true,\n  autoplay: {\n    delay: 2000\n  },\n  // Navigation arrows\n  navigation: {\n    nextEl: '.swiper-button-next',\n    prevEl: '.swiper-button-prev'\n  }\n});\nvar menu = new Swiper('.menu-container', {\n  // Optional parameters\n  loop: true,\n  autoplay: {\n    delay: 2000\n  },\n  // Navigation arrows\n  navigation: {\n    nextEl: '.swiper-button-next',\n    prevEl: '.swiper-button-prev'\n  }\n});\n$(window).load(function () {\n  $('.infiniteslide').infiniteslide();\n});\n$(\"#humbarger, .dropdown-item a\").click(function () {\n  $(\".humbarger-line\").toggleClass(\"active\");\n  $(\"#dropdown-nav\").toggleClass(\"in\");\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("$(window).load(function () {\n  $('.infiniteslide').infiniteslide();\n});\n$(\"#humbarger, .dropdown-item a\").click(function () {\n  $(\".humbarger-line\").toggleClass(\"active\");\n  $(\"#dropdown-nav\").toggleClass(\"in\");\n});\nvar swiper = new Swiper('.swiper-container', {\n  // Optional parameters\n  loop: true,\n  autoplay: {\n    delay: 2000\n  },\n  // Navigation arrows\n  navigation: {\n    nextEl: '.swiper-button-next',\n    prevEl: '.swiper-button-prev'\n  }\n});\nvar menu = new Swiper('.menu-container', {\n  // Optional parameters\n  loop: true,\n  autoplay: {\n    delay: 2000\n  },\n  // Navigation arrows\n  navigation: {\n    nextEl: '.swiper-button-next',\n    prevEl: '.swiper-button-prev'\n  }\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

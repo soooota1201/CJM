@@ -1,4 +1,4 @@
-@include mq('sp') {
+// @include mq('sp') {
 
   .l-header {
     padding: 10px;
@@ -11,7 +11,36 @@
 
     &-wrapper {
       display: flex;
+      align-items: center;
     }
+
+    &-nav {
+      margin-left: auto;
+      @include mq('sp') {
+        display: none;
+      }
+
+      &__item {
+        color: #ffffff;
+        margin-left: 15px;
+        letter-spacing: .6px;
+      }
+      
+      &__menu,
+      &__shop {
+        img {
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+
+      &__fc-btn {
+        padding: 15px 15px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+      }
+    }
+
 
     &-logo {
       img {
@@ -21,4 +50,4 @@
 
   }
 
-}
+// }

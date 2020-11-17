@@ -3,10 +3,22 @@
   width: 100%;
 }
 
-.swiper-slide {
-  img {
-    display: block;
+.swiper-img {
+  display: block;
+  width: 100%;
+}
+
+.pc-mv {
+  @include mq('sp') {
+    display: none !important;
   }
+}
+
+.sp-mv {
+    display: none;
+    @include mq('sp') {
+      display: block;
+    }
 }
 
 
