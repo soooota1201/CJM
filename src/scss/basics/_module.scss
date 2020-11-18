@@ -1,7 +1,13 @@
 
 .goldline {
+
   img {
+    width: 100%;
     display: block;
+    height: 10px;
+    @include mq('sp') {
+      height: initial;
+    }
   }
 }
 
@@ -20,12 +26,18 @@
   bottom: 0;
   background-color: #000000;
   z-index: 300;
+  text-align: center;
 
   &-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 0;
+    display: none;
+
+    @include mq('sp') {
+      display: inline-block;
+    }
 
     .main-btns-item {
       color: #ffffff;
@@ -44,8 +56,13 @@
   position: fixed;
   bottom: 60px;
   right: 0;
-  animation: wobble 1.8s ease-in-out infinite;
+  animation: wobble 1.4s ease-in-out infinite;
   z-index: 300;
+  display: none;
+
+  @include mq('sp') {
+    display: inline-block;
+  }
 }
 
 @keyframes wobble {
@@ -54,7 +71,7 @@
   }
 
   15% {
-    transform: translateX(-3px);
+    transform: translateX(-15px);
   }
 
   20% {

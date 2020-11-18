@@ -1,10 +1,23 @@
 .footer {
   background-color: #000000;
+  padding: 30px 0;
+  @include mq('sp') {
+    padding: 0;
+  }
 
   &-nav {
+    text-align: center;
+    @include mq('sp') {
+      text-align: initial;
+    }
 
     &__item {
-      border-bottom: 1px solid #ffffff;
+      display: inline-block;
+
+      @include mq('sp') {
+        display: block;
+        border-bottom: 1px solid #ffffff;
+      }
 
       a {
         font-size: 20px;

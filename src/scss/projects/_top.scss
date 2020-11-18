@@ -1,5 +1,5 @@
 
-@include mq('sp') {
+// @include mq('sp') {
 
   .infiniteslide {
     padding: 15px 0;
@@ -24,9 +24,14 @@
 
   
   .shop {
+
     &-index {
       padding: 25px 35px 40px;
       box-sizing: border-box;
+      width: 768px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &-item {
@@ -46,16 +51,26 @@
       }
 
       &__heading {
-        font-size: 18px;
+        font-size: 24px;
         padding-left: 10px;
         font-weight: 200;
+
+        @include mq('sp') {
+          font-size: 18px;
+        }
       }
 
       &__address {
-        font-size: 12px;
+        font-size: 16px;
+        margin-top: 15px;
+        color: #000000;
         padding-left: 10px;
         font-weight: 200;
-        margin-top: 7px;
+
+        @include mq('sp') {
+          font-size: 12px;
+          margin-top: 7px;
+        }
       }
     }
 
@@ -69,7 +84,11 @@
 
   .delivery {
     display: flex;
-    margin-top: 10px;
+    margin-top: 30px;
+
+    @include mq('sp') {
+      margin-top: 10px;
+    }
 
     &__ly {
       margin-right: 10px;
@@ -80,6 +99,19 @@
     padding-left: 15px;
   }
 
+  .delivery__icon {
+    width: 70px;
+
+    @include mq('sp') {
+      width: 50px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+
   /* ======================
             新着情報
     ====================== */
@@ -88,6 +120,10 @@
     .news-index {
       padding: 35px 50px;
       box-sizing: border-box;
+      width: 768px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &-item {
@@ -116,4 +152,4 @@
     }
   }
 
-}
+// }
