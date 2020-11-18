@@ -84,22 +84,14 @@
 
             <div class="shop-item l-shop-item">
               <figure class="shop-item__img">
-<<<<<<< HEAD
                 <?php echo get_the_post_thumbnail(); ?>
-=======
-                <img width="120px" height="120px" src="./src/img/thumb.jpg" alt="">
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
               </figure><!-- /.shop-item__left -->
               <div class="shop-item__text">
                 <p class="shop-item__heading">
                   <?php echo $shop_name; ?>
                 </p><!-- /.shop-item__heading -->
                 <figure>
-<<<<<<< HEAD
                   <img src="<?php echo get_template_directory_uri(); ?>/src/img/line.jpg" alt="">
-=======
-                  <?php echo get_the_post_thumbnail(); ?>
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
                 </figure>
                 <a href="<?php echo $address_link ?>" class="shop-item__address"><?php echo $address; ?></a>
                 <!-- /.shop-item__address -->
@@ -143,11 +135,7 @@
               'posts_per_page' => 6,
               'post_type' => array('shop'),
               'orderby' => 'date',
-<<<<<<< HEAD
               'order' => 'ASC',
-=======
-              'order' => 'DESC',
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
               'tax_query' => array(
                 array(
                   'taxonomy' => 'area', // タクソノミースラッグを指定
@@ -180,17 +168,12 @@
               <div class="shop-item__text">
                 <p class="shop-item__heading"><?php echo $shop_name; ?></p><!-- /.shop-item__heading -->
                 <figure>
-<<<<<<< HEAD
                   <img src="<?php echo get_template_directory_uri(); ?>/src/img/line.jpg" alt="">
-=======
-                  <img src="<?php echo get_template_directory_uri(); ?>/src/img/mv-line.jpg/src/img/line.jpg" alt="">
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
                 </figure>
                 <a href="<?php echo $address_link ?>"
                   class="shop-item__address"><?php echo $address; ?></a><!-- /.shop-item__address -->
                 <div class="delivery delivery-pl">
 
-<<<<<<< HEAD
                 <?php if ($ubereats) { ?>
                     <a class="delivery__icon delivery__ly" href="<?php echo $ubereats; ?>"><img width="50px"
                         height="50px" src="<?php echo get_template_directory_uri(); ?>/src/img/UberEats.jpg" alt=""></a>
@@ -205,18 +188,6 @@
                     <figure><img width="110px" src="<?php echo get_template_directory_uri(); ?>/src/img/open.jpg" alt="">
                     </figure>
                     <?php } ?>
-=======
-                  <?php if (!empty($ubereats)) { ?>
-                    <a class="delivery__icon delivery__ly" href="<?php echo $ubereats; ?>"><img width="50px" height="50px"
-                        src="<?php echo get_template_directory_uri(); ?>/src/img/UberEats.jpg" alt=""></a>
-                    <?php } elseif (!empty($takeout)) { ?>
-                    <a class="delivery__icon delivery__ly" href="<?php echo $takeout; ?>"><img width="50px" height="50px"
-                        src="<?php echo get_template_directory_uri(); ?>/src/img/takeout.jpg" alt=""></a>
-                    <?php } elseif (empty($ubereats) && empty($takeout)) { ?>
-                    <figure><img width="110px" src="<?php echo get_template_directory_uri(); ?>/src/img/open.jpg" alt="">
-                    </figure>
-                  <?php } ?>
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
 
                 </div><!-- /.delivery -->
               </div><!-- /.shop-item__address -->
@@ -270,20 +241,12 @@
       </main>
 
       <a href="https://wonshachicken.jp/fc2/" class="fc-btn">
-<<<<<<< HEAD
         <img width="100px" height="100px" src="<?php echo get_template_directory_uri(); ?>/src/img/fc-btn.png" alt="">
-=======
-        <img width="100px" height="100px" src="<?php echo get_template_directory_uri(); ?>/src/img/mv-line.jpg/src/img/fc-btn.png" alt="">
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
       </a><!-- /.fc-btn -->
 
       <div class="main-btns">
         <div class="main-btns-wrapper">
-<<<<<<< HEAD
           <a class="main-btns-item" href="<?php echo esc_url (home_url('menu')); ?>"><img width="42px" height="22px" src="<?php echo get_template_directory_uri(); ?>/src/img/menu-icon.jpg"
-=======
-          <a class="main-btns-item" href="./menu.html"><img width="42px" height="22px" src="<?php echo get_template_directory_uri(); ?>/src/img/mv-line.jpg/src/img/menu-icon.jpg"
->>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
               alt=""><span>メニュー</span></a>
         </div><!-- /.page-links-wrapper -->
       </div><!-- /.page-links -->
