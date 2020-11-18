@@ -17,6 +17,7 @@ jQuery(function ($) {
 //   // Optional parameters
 //   loop: true,
 
+<<<<<<< HEAD
 //   autoplay: {
 //     delay: 2000,
 //   },
@@ -29,3 +30,5 @@ jQuery(function ($) {
 
 // })
 
+=======
+>>>>>>> dc883dda05e015d6dfff77eb3cbc299c5f1ba6d5
